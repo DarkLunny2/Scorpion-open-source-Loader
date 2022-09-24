@@ -83,7 +83,7 @@ namespace ConsoleApp4
                 case "1":
                     Console.Clear();
                     Download.Loadcheat();
-                    //sorry for bad coding mad high lmao
+
                     break;
 
                 case "2":
