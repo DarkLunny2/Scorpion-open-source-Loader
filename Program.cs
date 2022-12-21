@@ -18,7 +18,7 @@ namespace ConsoleApp4
         {
             var hwid = GetHWID();
             CheckHWID(hwid);
-
+            //add your own protection 
         }
 
         private static string GetHWID() 
@@ -41,10 +41,10 @@ namespace ConsoleApp4
         {
            
             var client = new HttpClient();
-            var database = await client.GetAsync("https://pastebin.com/raw/LJMwMgQ7").Result.Content.ReadAsStringAsync();
+            var database = await client.GetAsync("https://pastebin.com/raw/your link here").Result.Content.ReadAsStringAsync();
             if (database.Contains(hwid))
             {
-                Console.Title = "Scorpion Open source loader";
+                Console.Title = "Shit Pastebin Loader lol";
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.Write("HWID Authorized!");
                 Console.Write("\nPress enter");
@@ -62,7 +62,7 @@ namespace ConsoleApp4
                 Console.Write("HWID Unauthorized\n");
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.ResetColor();
-                Console.Write("HWID: " + hwid + "\n");
+                Console.Write("HWID: " + hwid + "\nSend Hwid To Dev ");
                 Console.ReadLine();
                 Environment.Exit(0);
             }
